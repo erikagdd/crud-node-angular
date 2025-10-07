@@ -1,0 +1,30 @@
+- Tutorial: https://www.w3schools.com/nodejs/nodejs_mongodb.asp
+---------------------------------------------------------------------------------------------
+1. Què és MongoDB:
+    - https://www.genbeta.com/desarrollo/mongodb-que-es-como-funciona-y-cuando-podemos-usarlo-o-no
+
+2. Install MongoDB:
+    - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+    - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+  
+3. Executar MongoDB in Ubuntu:
+    $ sudo systemctl start mongod
+    $ sudo systemctl status mongod
+
+4. Crear una DB i una collection:
+    $ mongosh
+        > show dbs
+        > use persons
+        > db.personas.insert( { "nombre": "yomogan", "apellido": "yomogan", "edad": "46"})
+        > show collections
+        > db.personas.find().pretty()
+    
+5. - Creating a Database: https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
+        $ cd 4_hello_world_mongodb
+        $ npm install
+        $ node app.js
+        Database created!
+
+    - Creating a Collection: https://www.w3schools.com/nodejs/nodejs_mongodb_createcollection.asp
+    - Insert Into Collection: https://www.w3schools.com/nodejs/nodejs_mongodb_insert.asp
+    - Find One/Query/Sort/Delete/Update ...

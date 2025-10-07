@@ -1,0 +1,76 @@
+1. Afegir nodemon al server - How To Restart Your Node.js Apps Automatically:
+-----------------------------------------------------------------------------------
+    - https://www.digitalocean.com/community/tutorials/workflow-nodemon
+        $ npm install nodemon --save-dev
+        - Afegir a package.json:
+            "scripts": {
+                "dev": "nodemon server.js"
+            }
+        $ npm run dev
+        - Cada vegada que fem un canvi al codi del server, s'alçarà de nou el server
+    -----------------------------------------------------------------------------------
+    - Cal tindre instal.lada la versió 18 de Node:
+        - Afegir a package.json:
+            "scripts": {
+                "dev": "node --watch server.js"
+            }
+
+2. Implementar els mètodes del controller del server amb async-await:
+-----------------------------------------------------------------------------------
+    - Explicació: https://www.oscarblancarteblog.com/2019/03/15/javascript-async-await/
+    - Revisar el codi del controller del server: 
+        - https://github.com/ManuelVillarVitoria/Angular_Node_Express_MongoDB_CRUD
+        - https://github.com/MikeFMeyer/catchphrase-express-mongodb-rest-api
+
+3. Afegir slug als nostres productes:
+-----------------------------------------------------------------------------------
+    - Model: https://github.com/winterrrrrff/realWorld-server/blob/main/models/Article.js
+    - Controller: https://github.com/winterrrrrff/realWorld-server/blob/main/controllers/articlesController.js
+
+4. How to use environment variables with Node/Express.js - .env:
+-----------------------------------------------------------------------------------
+    - https://javascript.plainenglish.io/using-environment-variables-like-a-pro-in-node-js-7fd2793808d3
+    - https://www.raddy.dev/blog/node-js-dotenv-explained-hello-world-app/
+    - NodeJS en la pròxima versió (20.6) incorpora nativament el reconeixement de variables d'entorn:
+        - https://philna.sh/blog/2023/09/05/nodejs-supports-dotenv/?s=03
+
+5. JavaScript Error Handling:
+-----------------------------------------------------------------------------------
+    - https://www.freecodecamp.org/news/the-javascript-error-handling-handbook/
+        - Custom Errors
+    - Prompt: Dame un ejemplo de cómo enviarías un error en JSON en Express y lo consumirías desde Angular bien para pintarlo en un Sweet Alert o bien para pintarlo en un ngIf en un formulario reactivo.
+
+6. Afegir a Angular ngx-toastr/sweetalert2:
+-----------------------------------------------------------------------------------
+    - https://github.com/scttcper/ngx-toastr
+    - https://sweetalert2.github.io/
+
+7. Reactive forms:
+-----------------------------------------------------------------------------------
+    - https://github.com/bezkoder/angular-14-form-validation
+
+8. lazy loading i code splitting:
+-----------------------------------------------------------------------------------
+	- https://angular.dev/guide/ngmodules/lazy-loading
+    - https://gitlab.com/mugan86/lazy-loading-angular
+    - https://github.com/khaledosman/angular-realworld-example-app
+
+9. standalone components - arquitectura:
+-----------------------------------------------------------------------------------
+    - https://www.thisdot.co/blog/how-to-create-standalone-components-in-angular
+    - Arquitectura: pages,components, services, etc.
+    - https://github.com/GuiVelMat/Infojobs_MEAN
+
+10. Dependency inject (DI):
+-----------------------------------------------------------------------------------
+    - https://github.com/vivek1384/Restaurant-Booking-App/blob/main/src/app/home/home.component.ts
+
+11. Morgan:
+-----------------------------------------------------------------------------------
+    - https://www.geeksforgeeks.org/what-is-morgan-in-node-js/
+    - https://dev.to/devland/how-to-use-morgan-in-your-nodejs-project-21im
+    - https://signoz.io/blog/morgan-logger/
+
+12. NodeJS — Make Your API Response Nicely - serializers:
+-----------------------------------------------------------------------------------
+    - https://github.com/hudaprs/be_response_api_nodejs

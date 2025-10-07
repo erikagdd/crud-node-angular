@@ -1,0 +1,64 @@
+1. Install:
+-----------------------------------------------------------------------------------------
+    $ git clone https://github.com/callicoder/node-easy-notes-app.git CRUD_Express_Mongo_Postman
+    $ cd CRUD_Express_Mongo_Postman/
+    $ npm install
+    $ sudo service mongod start
+    $ node server.js
+    - http://localhost:3000
+
+2. MongoDB:
+-----------------------------------------------------------------------------------------
+    - Obrim una altra terminal en Visual Studio per crear la db, la collection i crear una note
+    $ mongosh
+        > show dbs
+        > use easy-notes
+        > db.notes.insert( { "title": "title1", "content": "content1"})
+        > show collections
+        > db.notes.find().pretty()
+        > db.dropDatabase();
+
+3. Postman:
+-----------------------------------------------------------------------------------------  
+    - POST http://0.0.0.0:3000/notes
+        {
+            "title": "title_1",
+            "content": "content_1"
+        }
+    - GET http://0.0.0.0:3000/notes
+    - GET http://0.0.0.0:3000/notes/62861f8e919cef6082cecd29
+    - PUT http://0.0.0.0:3000/notes/62861f8e919cef6082cecd29
+        {
+            "title": "title_2",
+            "content": "content_2"
+        }
+    - DELETE http://0.0.0.0:3000/notes/62861f8e919cef6082cecd29
+
+4. Crear una col.lecció i la documentació de l'anterior API creada a l'exercici de CRUD, en Postman:
+-----------------------------------------------------------------------------------
+    - https://learning.postman.com/docs/sending-requests/intro-to-collections/
+    - https://learning.postman.com/docs/publishing-your-api/documenting-your-api/
+
+5. Explicacions:
+-----------------------------------------------------------------------------------
+- mongoose:
+	- https://code.tutsplus.com/es/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527
+	
+- Models, schema:
+	- https://rafaruiznavas.wordpress.com/2015/07/27/introduccion-a-mongoose-entendiendo-los-esquemas-de-mongoose/
+
+- Creating a Collection, Insert Into Collection, Find One/Query/Sort/Delete/Update, ....
+	- https://www.w3schools.com/nodejs/nodejs_mongodb.asp
+
+- Comparison mysql-vs-mongodb:
+	- https://guiadev.com/mysql-vs-mongodb/
+	- https://docs.mongodb.com/manual/reference/sql-comparison/
+
+- https://expressjs.com/es/api.html#req
+	req.body, req.params, ...
+	
+- https://expressjs.com/es/api.html#res
+	res.send, res.status, ...
+
+- express.Router:
+    - https://expressjs.com/es/guide/routing.html

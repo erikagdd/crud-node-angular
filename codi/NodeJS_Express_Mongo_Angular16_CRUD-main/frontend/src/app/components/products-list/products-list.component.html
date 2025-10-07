@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h2>Lista de conciertos</h2>
+
+  <!-- Si no hi ha productes  -->
+  <div *ngIf="!products || products.length === 0">
+    <p>No hay conciertos disponibles.</p>
+  </div>
+
+  <!-- Si hi ha productes -->
+  <ul *ngIf="products && products.length > 0" class="list-group">
+    <li *ngFor="let product of products; let i = index" class="list-group-item">
+      <app-product-card [value]="product"></app-product-card>
+    </li>
+  </ul>
+</div>

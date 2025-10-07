@@ -1,0 +1,48 @@
+- Explicació server: https://www.bezkoder.com/node-express-mongodb-crud-rest-api/
+- Codi server: https://github.com/bezkoder/node-express-mongodb
+
+- Explicació client: https://www.bezkoder.com/angular-17-crud-example/
+- Codi client: https://github.com/bezkoder/angular-17-crud-example
+
+1. Install server:
+-----------------------------------------------------------------------------------
+    $ git clone https://github.com/bezkoder/node-express-mongodb.git server
+    $ cd server
+    $ npm install
+
+    $ sudo service mongod start
+    $ mongosh
+        > show dbs
+        > use crud_express_angular
+    - Canviar a config/db.config.js el valor de les credencials de Mongo
+    $ node server.js
+    - http://localhost:8080
+
+2. Postman:
+-----------------------------------------------------------------------------------
+    - POST http://localhost:8080/api/tutorials
+        {
+            "title": "title_1",
+            "description": "description_1"
+        }
+    - GET http://localhost:8080/api/tutorials
+    - GET http://localhost:8080/api/tutorials/628b5b15288f60ee4db032dd
+    - PUT http://localhost:8080/api/tutorials/628b5b15288f60ee4db032dd
+        {
+            "title": "title_2",
+            "description": "description_2"
+        }
+    - DELETE http://localhost:8080/api/tutorials/628b5b15288f60ee4db032dd
+
+3. Install client:
+-----------------------------------------------------------------------------------
+    $ git clone https://github.com/bezkoder/angular-17-crud-example.git client
+    $ cd client
+    $ npm install
+    - TutorialService: canviar la url per la del server
+    - server.js: canviar corsOptions per la url del client
+    $ npm start
+    - http://localhost:4200/
+
+4. Recordar que podem debuguejar al client i al server amb console.log
+-----------------------------------------------------------------------------------

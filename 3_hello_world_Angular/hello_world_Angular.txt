@@ -1,0 +1,26 @@
+- https://angular.dev
+---------------------------------------------------------------------------------------------------------------
+1. Què és Angular:
+    - https://victorroblesweb.es/2017/08/05/que-es-angular-y-para-que-sirve/
+    - https://www.campusmvp.es/recursos/post/las-5-principales-ventajas-de-usar-angular-para-crear-aplicaciones-web.aspx
+
+2. Què és TypeScript:
+    - https://codigofacilito.com/articulos/typescript
+
+3. Què és angular-cli - install:
+    - https://www.atlantic.net/dedicated-server-hosting/how-to-install-angular-cli-on-ubuntu-24-04/
+    $ npm install -g @angular/cli
+    $ ng version
+
+4. Comandes angular-cli:
+    - ChatGPT: Explícame los principales comandos de angular-cli
+        ng generate component my-component (o ng g c my-component)
+        ng generate service my-service
+        ng generate module my-module
+
+5. HelloWorld Angular:
+    $ cd 3_hello_world_Angular/
+    $ ng new hello-world
+    $ cd hello-world
+    $ ng serve
+    - http://localhost:4200

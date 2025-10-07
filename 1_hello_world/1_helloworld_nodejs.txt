@@ -1,0 +1,19 @@
+- Tutorials: 
+    - https://www.w3schools.com/nodejs/
+    - https://github.com/midudev/curso-node-js
+--------------------------------------------------------------------------------------
+1. Què és NodeJS:
+    - https://www.luisllamas.es/que-es-node-js/
+
+2. Install nodejs i npm:
+    - https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04
+    - https://phoenixnap.com/kb/install-node-js-npm-on-windows
+
+    $ node -v
+    $ npm -v
+
+3. HelloWorld nodejs:
+    - https://nodejs.org/en/docs/guides/getting-started-guide/
+    $ cd 1_helloworld_nodejs
+    $ node app.js
+    - http://127.0.0.1:3000/

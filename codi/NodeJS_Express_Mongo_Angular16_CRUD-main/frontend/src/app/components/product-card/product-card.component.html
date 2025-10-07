@@ -1,0 +1,5 @@
+<div>
+    <h1>{{ value.name }}</h1>
+    <button routerLink="/product/update/{{ value.slug }}">Update</button>
+    <button type="submit" (click)="deleteProduct(value.slug)">Delete</button>
+</div>

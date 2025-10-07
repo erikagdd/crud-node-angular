@@ -1,0 +1,46 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <!-- Name -->
+        <label for="product_name">Name product:</label>
+        <input 
+            id="product_name" 
+            type="text" 
+            name="product_name"
+            formControlName="name"
+            class="form-control"
+            [ngClass]="{'is-invalid': submitted && f['name'].errors }"
+        />
+        <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+            <div *ngIf="f['name'].errors['required']">The name is required</div>
+        </div>
+        <!-- Price -->
+        <label for="product_price">Price product:</label>
+        <input 
+            id="product_price" 
+            type="number"
+            name="product_price"
+            formControlName="price"
+            class="form-control"
+            [ngClass]="{'is-invalid': submitted && f['price'].errors}"
+        />
+        <div *ngIf="submitted && f['price'].errors" class="invalid-feedback">
+            <div *ngIf="f['price'].errors['required']">The price is required</div>
+        </div>
+        <!-- Description -->
+        <label for="product_description">Description producto:</label>
+        <input 
+            id="product_description" 
+            type="text" 
+            name="product_description"
+            formControlName="description"
+            class="form-control"
+            [ngClass]="{'is-invalid': submitted && f['description'].errors}"
+        />
+        <div *ngIf="submitted && f['description'].errors" class="invalid-feedback">
+            <div *ngIf="f['description'].errors['required']">The price is required</div>
+        </div>
+        <br/>
+        <!--Button-->
+        <button class="btn btn-success" type="submit">{{!this.update ? 'Add' : 'Update'}}</button>
+    </form>
+</div>

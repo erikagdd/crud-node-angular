@@ -1,0 +1,14 @@
+- Tutorial: https://www.tutorialspoint.com/expressjs/index.htm
+----------------------------------------------------------------------------------
+1. Què és ExpressJS:
+    - https://medium.com/@aarnlpezsosa/introducci%C3%B3n-a-express-js-a1ebe16dbcf4
+
+2. Install ExpressJS:
+    - https://expressjs.com/es/starter/installing.html
+
+3. HelloWorld ExpressJS:
+    - https://expressjs.com/es/starter/hello-world.html
+    $ cd 2_hello_world_express
+    $ npm install
+    $ node app.js
+    - http://localhost:3000/

@@ -1,0 +1,32 @@
+1. Install:
+---------------------------------------------------------------------------------------------------
+    $ git clone https://github.com/gsandamali/Building-a-REST-API-using-Node-js.git 3_nodejs_json
+    $ cd 3_nodejs_json/
+    $ npm install
+    $ node index.js
+    - http://localhost:3000/movies
+
+2. Postman:
+---------------------------------------------------------------------------------------------------
+    1. Què és Postman: http://www.arquitectoit.com/postman/que-es-postman/
+    2. Install Postman: 
+        - https://www.postman.com/downloads/
+        - Postman des de VSCode: https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode
+    3. Com gastar Postman per provar una API: 
+        - https://desarrolloweb.com/articulos/como-usar-postman-probar-api
+        - https://abi.gitbook.io/net-core/4.-creando-tu-primer-servicio/4.4-probando-tus-servicios-con-postman
+
+    - POST http://localhost:3000/movies
+        {
+            "id":"3",
+            "title": "title_1",
+            "director": "director2",
+            "release_date": "2021-12-03"
+        }
+    - GET http://localhost:3000/movies
+    - GET http://localhost:3000/movies/3
+    - DELETE http://localhost:3000/movies/3
+
+3. Alternatives a Postman - Thunder Client for VS Code:
+---------------------------------------------------------------------------------------------------
+    - https://www.thunderclient.com/ 
